@@ -25,7 +25,7 @@ function App() {
         </label>
         <input 
           type="text" 
-          placeholder="Search Wordle here..." 
+          placeholder="Search word here..." 
           name="word_pattern"
         >
         </input>
