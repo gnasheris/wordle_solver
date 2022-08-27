@@ -9,10 +9,28 @@ function App() {
         - Type letter word into its respective box<br></br>
         - Put * (asterisk) for unknown letter<br></br>
       </p>
-      <form action="GET" className="search-bar">
-        <label for="wordPattern">Word Pattern: </label>
-        <input type="text" placeholder="Search Wordle here..." name="word_pattern"></input>
+      
+
+      <p>Word Length: 5 (adjust slider below)</p>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></input>
+      </div>
+
+      <form 
+        action="GET" 
+        className="search-bar"
+      >
+        <label 
+          for="wordPattern">Word Pattern: 
+        </label>
+        <input 
+          type="text" 
+          placeholder="Search Wordle here..." 
+          name="word_pattern"
+        >
+        </input>
       </form>
+
       <button className="search">Search Wordle</button>
       <p>**print input here**</p>
       <header className="App-header">
